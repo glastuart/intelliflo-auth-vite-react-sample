@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/*
+Generic components
+*/
+.container-full-center {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/*
+Splash Screen custom component
+*/
+h1.splash {
+    margin: 0;
+    font-size: 3.4rem;
+    text-align: center;
+    background: linear-gradient(to right, #FFF 20%, #262E5E 40%, #262E5E 60%, #FFF 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2s linear infinite;
+}
