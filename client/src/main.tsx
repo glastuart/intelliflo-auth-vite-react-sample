@@ -9,7 +9,7 @@ const oidc : OidcClientSettings = {
     authority: import.meta.env.VITE_IFLO_AUTHORITY,
     client_id: import.meta.env.VITE_IFLO_CLIENT_ID,
     redirect_uri: window.location.origin,
-    scope: 'openid profile myprofile'
+    scope: 'openid profile myprofile client_data'
 };
 
 createRoot(document.getElementById('root')!).render(
